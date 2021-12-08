@@ -14,4 +14,3 @@ jobs:
 
   call-workflow-passing-data:
       uses: CJN-Team/pet-project-services/.github/workflows/docker_ci.yml@main
-
