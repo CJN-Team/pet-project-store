@@ -13,7 +13,9 @@ env:
 jobs:
 
   call-workflow-passing-data:
-      uses: CJN-Team/pet-project-services/.github/workflows/docker_ci.yml@main
-      secrets:
-        DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
-        DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+    uses: CJN-Team/pet-project-services/.github/workflows/docker_ci.yml@main
+    secrets:
+      DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
+      DOCKER_HUB_PASSWORD: ${{ secrets.DOCKER_HUB_PASSWORD }}
+      
+    name: Call Pipeline for Project CI/CD (Build and Push to DockerHub)
