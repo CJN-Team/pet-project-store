@@ -35,7 +35,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
       with:
-        images: ${{ env.REGISTRY }}/${{ github.event.repository.name }}-${{ steps.extract_branch.outputs.branch }}
+        images: southcascade/${{ github.event.repository.name }}-${{ steps.extract_branch.outputs.branch }}
         tags: latest
       
     - name: Build and push Docker image
